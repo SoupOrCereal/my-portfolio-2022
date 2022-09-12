@@ -7,86 +7,95 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open%20Sans' rel='stylesheet'>
 </head>
 
 <body>
   
   <header>
     <nav>
-      <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact" id="nav-contact">Contact</a>
     </nav>
-    <p>Justin Sargent, seeking employment as a professional programmer.<br />My goal is to become a key part of a core development team.</p>
+    <h1>Hello World,<br /><span>&nbsp;&nbsp;&nbsp;my name is Justin Sargent.</span></h1>
+    <p>I<span>'ve recently completed a frontend web developer course,<br />&nbsp;&nbsp;and</span> am seeking employment as a web developer.</p>
   </header>
   <section id="skills">
-    <h3>Skills</h3>
-    <ul>
-      <li>Build responsive websites that provide app-like usability for any device, regardless of input type and screen size.</li>
-      <li>Code websites with proper HTML5 layout tags for better web accessibility and improved SEO rankability.</li>
-      <li>Use GitHub to apply version control to protect source code.</li>
-      <li>Highly proficient with Unity game engine and C#.</li>
-    </ul>
-    <h5>Tools</h5>
-    <ul>
-      <li>Visual Studio for coding</li>
-      <li>DevTools for debugging</li>
-      <li>Photoshop for image editing</li>
-      <li>GitHub for source control</li>
-      <li>Unity for game development</li>
-    </ul>
+    <h2>Skills</h2>
+    <img src="img/skillCloud.png" id="skills-cloud" alt="Skills Cloud" />
+    <h3>Tools</h3>
+    <div id="skills-tools">
+      <span><img src="img/icon-coding.png" alt="coding icon" />&nbsp;&nbsp;<strong>Visual Studio</strong>&nbsp;&nbsp;<i>for coding</i></span><br />
+      <span><img src="img/icon-DevTools.png" alt="debugging icon" />&nbsp;&nbsp;<strong>DevTools</strong>&nbsp;&nbsp;<i>for debugging</i></span><br />
+      <span><img src="img/icon-PSD.png" alt="PSD icon" />&nbsp;&nbsp;<strong>Photoshop</strong>&nbsp;&nbsp;<i>for image editing</i></span><br />
+      <span><img src="img/icon-GitHub.png" alt="GitHub icon" />&nbsp;&nbsp;<strong>GitHub</strong>&nbsp;&nbsp;<i>for source control</i></span><br />
+      <span><img src="img/icon-gameCreation.png" alt="game dev icon" />&nbsp;&nbsp;<strong>Unity</strong>&nbsp;&nbsp;<i>for game development</i></span>
+    </div>
   </section>
   <section id="projects">
-    <h3>Projects</h3>
-    <div class="project">
-      <a href="https://souporcereal.github.io/responsive-website/" target="_blank">
-        <img src="img/project-unplugged.gif" alt="Unplugged Retreat Preview" width="420" />
-        <i>click to view live version</i>
-      </a>
-      <h5>Unplugged Retreat - Responsive Website</h5>
-      <p>Turned a Photoshop design file into a responsive website.</p>
-      <p>Skills: HTML5, CSS3 and Responsive Design Techniques</p>
-      <p>Tools: Visual Studio Code, DevTools, Photoshop and GitHub</p>
-    </div>
-    <div class="project">
-      <a href="https://tlo7mh.csb.app/" target="_blank">
-        <img src="img/project-nameTag.gif" alt="Name Tag Generator Preview" width="420" />
-        <i>click to view live version</i>
-      </a>
-      <h5>Name Tag Generator - ReactJS SinglePageApp</h5>
-      <p>A name tag creation web tool.</p>
-      <p>Skills: HTML5, CSS3, JS, ES6 modules, React Components and JSX usage.</p>
-      <p>Tools: CodeSandbox, GitHub and DevTools</p>
-    </div>
-    <div class="project">
-      <a href="https://souporcereal.github.io/my-github-repo-gallery/" target="_blank">
-        <img src="img/project-repo.gif" alt="My Repo Gallery Preview" width="420" />
-        <i>click to view live version</i>
-      </a>
-      <h5>My GitHub Repo Gallery</h5>
-      <p>A page with all my public GitHub repos with a custom search feature.</p>
-      <p>Skills: HTML5, CSS3, Javascript, DOM manipulation and API usage.</p>
-      <p>Tools: GitHub, Visual Studio Code and DevTools</p>
+    <h2>Projects</h2>
+    <div id="projects-wrapper">
+      <div class="project">
+        <h3>Unplugged Retreat</h3>
+        <a href="https://souporcereal.github.io/responsive-website/" target="_blank">
+          <img src="img/project-unplugged.gif" alt="Unplugged Retreat Preview" width="420" />
+          <i>click to view live version</i>
+        </a>
+        <h4>A responsive website created from a Photoshop design file.</h4>
+        <p>Skills: HTML5, CSS3 and Responsive Design Techniques</p>
+        <p class="project-tools">Tools: Visual Studio Code, DevTools, Photoshop and GitHub</p>
+      </div>
+      <div class="project">
+        <h3>Name Tag Generator</h3>
+        <a href="https://tlo7mh.csb.app/" target="_blank">
+          <img src="img/project-nameTag.gif" alt="Name Tag Generator Preview" width="420" />
+          <i>click to view live version</i>
+        </a>
+        <h4>A SinglePageApplication created with ReactJS.</h4>
+        <p>Skills: HTML5, CSS3, JS, ES6 modules and JSX usage.</p>
+        <p class="project-tools">Tools: CodeSandbox, GitHub and DevTools</p>
+      </div>
+      <div class="project">
+        <h3>My GitHub Repo Gallery</h3>
+        <a href="https://souporcereal.github.io/my-github-repo-gallery/" target="_blank">
+          <img src="img/project-repo.gif" alt="My Repo Gallery Preview" width="420" />
+          <i>click to view live version</i>
+        </a>
+        <h4>A collection of my public GitHub repositories.</h4>
+        <p>Skills: HTML5, CSS3, JS, DOM manipulation and API usage.</p>
+        <p class="project-tools">Tools: GitHub, Visual Studio Code and DevTools</p>
+      </div>
+      <div class="project">
+        <h3>Deranged Park Rangers</h3>
+        <a href="https://store.steampowered.com/app/1294480/Deranged_Park_Rangers/" target="_blank">
+          <img src="img/project-DPR.gif" alt="Deranged Park Rangers (PC) Preview" width="420" />
+          <i>click to view live version</i>
+        </a>
+        <h4>A massively multiplayer online video game demo for PC.</h4>
+        <p>Skills: C#, game networking and <strong>RAPID</strong> game development.</p>
+        <p class="project-tools">Tools: Unity and Visual Studio</p>
+      </div>
     </div>
   </section>
   <section id="about">
-    <h3>About</h3>
-    <img src="img/myPic.png" alt="Headshot" width="420" height="388" />
+    <h2>About</h2>
+    <img src="img/myPic.png" alt="Headshot" width="420" height="369" />
     <p>I love rapidly solving the technical problems that arise when developing software.  
-      I've been interested in computers since I read a computer repair manual and built my own 
-      web server from scrap parts when I was a kid.  During my teens I was a paid editor for Developer Zone and was 
+      I've been interested in computers since building a web server from scrap parts when I was a kid.  During my teens I was a paid editor for Developer Zone and 
       fascinated by multiplayer game engine development.</p>
   </section>
-  <section id="contact">
-    <h4>Contact</h4>
-    <img src="img/myEmail.png" alt="My eMail Address" width="420" height="64" />
-  </section>
-  <footer>
-    <p>This site was developed using HTML5 and CSS3.  Feel free to use <a href="https://github.com/SoupOrCereal/my-portfolio-2022" target="_blank">my source code</a>.</p>
-    <!-- validate then add symbols -->
+  <footer id="contact">
+    <h2>Contact</h2>
+    <img src="img/myEmail.png" alt="My eMail Address" id="email-img" width="420" height="69" />
+    <div id="validator-icons">
+      <img src="img/w3c_html.png" alt="HTML W3C Validated" height="32px" />
+      <img src="img/w3c_css.png" alt="CSS W3C Validated" height="32px" />
+    </div>
+    <p>This site's HTML and CSS has been W3C Validated.  <br />Feel free to use <a href="https://github.com/SoupOrCereal/my-portfolio-2022" target="_blank">my source code</a>.</p>
   </footer>
 
 </body>
