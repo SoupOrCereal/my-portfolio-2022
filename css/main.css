@@ -394,6 +394,14 @@ nav a:hover, #nav-contact:hover{
   font-style: normal;
 }
 
+#x-factor a{
+  display: unset;
+  float: unset;
+  font-style: unset;
+  font-size: unset;
+  padding-right: unset;
+}
+
 .skill-level {
   width: 100%;
   background-color: var(--skill-bar-bg);
