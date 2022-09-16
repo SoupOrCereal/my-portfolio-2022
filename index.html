@@ -5,15 +5,17 @@
   <meta charset="utf-8">
   <title>Justin Sargent's 2022 Portfolio</title>
 
+  <!-- stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- web fonts -->
   <link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Open%20Sans' rel='stylesheet'>
 </head>
 
 <body>
-  
+
   <header>
     <nav>
       <a href="#skills">Skills</a>
@@ -24,9 +26,71 @@
     <h1>Hello World,<br /><span>&nbsp;&nbsp;&nbsp;my name is Justin Sargent.</span></h1>
     <p>I<span>'ve recently completed a frontend web developer course,<br />&nbsp;&nbsp;and</span> am seeking employment as a web developer.</p>
   </header>
+
   <section id="skills">
     <h2>Skills</h2>
-    <img src="img/skillCloud.png" id="skills-cloud" alt="Skills Cloud" />
+    <div id="skills-grid">
+      <div class="skill">
+        <h4>Problem Solving</h4>
+        <div class="skill-level"><div class="skill-bar problem-solving skill-bar-anim-end">96%</div></div>
+        <div class="one-line-skill-info"><p><strong>It's what I do.</strong></p></div>
+      </div>
+      <div class="skill">
+        <h4>HTML</h4><a href="https://verify.w3schools.com/1MVIGUKJ7P" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar html skill-bar-anim-end">88%</div></div>
+        <p>The first langauge I learned, years ago.<br />I know HTML well.</p>
+      </div>
+      <div class="skill">
+        <h4>CSS</h4><a href="https://verify.w3schools.com/1MVIGUTUTF" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar css skill-bar-anim-end">72%</div></div>
+        <p>Used along with HTML for years.<br />My CSS know-how is above average.</p>
+      </div>
+      <div class="skill">
+        <h4>Javascript</h4><a href="https://verify.w3schools.com/1MVIGURFFE" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar js skill-bar-anim-end">48%</div></div>
+        <p>Used VanillaJS infrequently for years.<br />I can rapidly improve.</p>
+      </div>
+      <div class="skill">
+        <h4>PHP</h4><a href="https://verify.w3schools.com/5VY8VUD46" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar php skill-bar-anim-end">64%</div></div>
+        <p>I've used PHP for my server-side logic <br />over the years.</p>
+      </div>
+      <div class="skill">
+        <h4>Java</h4><a href="https://verify.w3schools.com/1MVIGU4MUS" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar java skill-bar-anim-end">68%</div></div>
+        <p>Used Java for mobile app development <br />daily, years ago.</p>
+      </div>
+      <div class="skill">
+        <h4>C#</h4><a href="https://verify.w3schools.com/1MYG35L1Z6" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar cs skill-bar-anim-end">90%</div></div>
+        <p>C# is my favorite programming langauge!<br />Tens of thousands of lines of game code.</p>
+      </div>
+      <div class="skill">
+        <h4>Python</h4><a href="https://verify.w3schools.com/1MVIGUDAL7" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar py skill-bar-anim-end">20%</div></div>
+        <p>Learned Python years ago.<br />I haven't used Python much though.</p>
+      </div>
+      <div class="skill">
+        <h4>ReactJS</h4><a href="https://verify.w3schools.com/1MVQ4FHPX1" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar react skill-bar-anim-end">15%</div></div>
+        <p>New to me.<br />Only used while learning, so far.</p>
+      </div>
+      <div class="skill">
+        <h4>SQL</h4><a href="https://verify.w3schools.com/1MVIGUHYOX" target="_blank">W3Schools Certified</a>
+        <div class="skill-level"><div class="skill-bar sql skill-bar-anim-end">50%</div></div>
+        <p>Used for database-related logic<br /> over the years.</p>
+      </div>
+      <div class="skill" id="x-factor">
+        <h4>X factor</h4>
+        <div class="skill-level"><div class="xf-bar xf xf-anim-end"></div></div>
+        
+        <p>I've self-published software on several different operating systems.
+          <br />Symbian, BlackBerry, Android, iPhone, Windows (phone, IOT, UWP and traditional), Linux, New Nintendo 3DS&#8482;, Nintendo Wii U&#8482;, Sony PSP, "Web" and lesser-known platforms.
+          <br /><br /> Also, certified for several more development topics like <a href="https://souporcereal.com/Resume/Justin_Sargent_Microsoft_Azure_Fundamentals_Certification.png" target="_blank">Azure</a> and <a href="https://verify.w3schools.com/5VY8VW92I" target="_blank">Cyber Security</a>.
+          <br /><br /><i>And, I've recently completed Skillcrush's frontend web dev course.
+          <br/>Covering topics like reponsive web, web accessability, Git/GitHub and ReactJS.</i></p>
+      </div>
+    </div>
     <h3>Tools</h3>
     <div id="skills-tools">
       <span><img src="img/icon-coding.png" alt="coding icon" />&nbsp;&nbsp;<strong>Visual Studio</strong>&nbsp;&nbsp;<i>for coding</i></span><br />
@@ -36,13 +100,14 @@
       <span><img src="img/icon-gameCreation.png" alt="game dev icon" />&nbsp;&nbsp;<strong>Unity</strong>&nbsp;&nbsp;<i>for game development</i></span>
     </div>
   </section>
+
   <section id="projects">
     <h2>Projects</h2>
     <div id="projects-wrapper">
       <div class="project">
         <h3>Unplugged Retreat</h3>
         <a href="https://souporcereal.github.io/responsive-website/" target="_blank">
-          <img src="img/project-unplugged.gif" alt="Unplugged Retreat Preview" width="420" />
+          <img src="img/project-unplugged.gif" alt="Unplugged Retreat Preview" width="420" id="unplugged-gif" />
           <i>click to view live version</i>
         </a>
         <h4>A responsive website created from a Photoshop design file.</h4>
@@ -52,7 +117,7 @@
       <div class="project">
         <h3>Name Tag Generator</h3>
         <a href="https://tlo7mh.csb.app/" target="_blank">
-          <img src="img/project-nameTag.gif" alt="Name Tag Generator Preview" width="420" />
+          <img src="img/project-nameTag.gif" alt="Name Tag Generator Preview" width="420" id="nametag-gif"  />
           <i>click to view live version</i>
         </a>
         <h4>A SinglePageApplication created with ReactJS.</h4>
@@ -62,7 +127,7 @@
       <div class="project">
         <h3>My GitHub Repo Gallery</h3>
         <a href="https://souporcereal.github.io/my-github-repo-gallery/" target="_blank">
-          <img src="img/project-repo.gif" alt="My Repo Gallery Preview" width="420" />
+          <img src="img/project-repo.gif" alt="My Repo Gallery Preview" width="420" id="repo-gif"  />
           <i>click to view live version</i>
         </a>
         <h4>A collection of my public GitHub repositories.</h4>
@@ -72,7 +137,7 @@
       <div class="project">
         <h3>Deranged Park Rangers</h3>
         <a href="https://store.steampowered.com/app/1294480/Deranged_Park_Rangers/" target="_blank">
-          <img src="img/project-DPR.gif" alt="Deranged Park Rangers (PC) Preview" width="420" />
+          <img src="img/project-DPR.gif" alt="Deranged Park Rangers (PC) Preview" width="420" id="dpr-gif"  />
           <i>click to view live version</i>
         </a>
         <h4>A massively multiplayer online video game demo for PC.</h4>
@@ -81,6 +146,7 @@
       </div>
     </div>
   </section>
+
   <section id="about">
     <h2>About</h2>
     <img src="img/myPic.png" alt="Headshot" width="420" height="369" />
@@ -88,15 +154,22 @@
       I've been interested in computers since building a web server from scrap parts when I was a kid.  During my teens I was a paid editor for Developer Zone and 
       fascinated by multiplayer game engine development.</p>
   </section>
+
   <footer id="contact">
     <h2>Contact</h2>
-    <img src="img/myEmail.png" alt="My eMail Address" id="email-img" width="420" height="69" />
-    <div id="validator-icons">
-      <img src="img/w3c_html.png" alt="HTML W3C Validated" height="32px" />
-      <img src="img/w3c_css.png" alt="CSS W3C Validated" height="32px" />
+    <p><a href="mailto:justin@souporcereal.com" id="my-email">Justin<span>@</span>SoupOrCereal.com</a></p>
+    <div id="social-icons">
+      <a href="https://www.linkedin.com/in/justin-sargent-5a64a4218/" target="_blank"><img src="img/linkedInLogo.png" alt="My LinkedIN Profile" /></a>
+      <a href="https://github.com/SoupOrCereal" target="_blank"><img src="img/gitHubLogo.png" alt="My GitHub Profile" /></a>
     </div>
-    <p>This site's HTML and CSS has been W3C Validated.  <br />Feel free to use <a href="https://github.com/SoupOrCereal/my-portfolio-2022" target="_blank">my source code</a>.</p>
+    <div id="validator-icons">
+      <img src="img/w3c_html.png" alt="HTML W3C Validated" />
+      <img src="img/w3c_css.png" alt="CSS W3C Validated" />
+    </div>
+    <p>This site's HTML and CSS has been W3C Validated.  <br />Feel free to use <a href="https://github.com/SoupOrCereal/my-portfolio-2022" target="_blank" id="footer-source-code-link">my source code</a>.</p>
   </footer>
+
+  <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
