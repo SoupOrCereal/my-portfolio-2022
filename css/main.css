@@ -309,7 +309,6 @@ p{
 
 header, footer, section{
   padding: 88px;
-  display: block;
 }
 
 header, footer, #projects{
@@ -600,6 +599,7 @@ footer{
   font-size: 0.69rem;
   padding-bottom: 12px;
   text-align: center;
+  margin-top: 128px;
 }
 
 footer br{
