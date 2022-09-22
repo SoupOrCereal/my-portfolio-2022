@@ -309,7 +309,7 @@ p{
 
 header, footer, section{
   padding: 88px;
-  width: 100%;
+  display: block;
 }
 
 header, footer, #projects{
@@ -685,10 +685,6 @@ footer #my-email span:hover{
     justify-content: center;
   }
 
-  #skills-cloud{
-    width: 100%;
-  }
-
   #projects-wrapper{
     justify-content: space-between;
     gap: 42px 42px;
@@ -753,10 +749,6 @@ footer #my-email span:hover{
 
   nav {
     justify-content: space-evenly;
-  }
-
-  #skills-cloud{
-    width: 100%;
   }
 
   #skills-tools i{
