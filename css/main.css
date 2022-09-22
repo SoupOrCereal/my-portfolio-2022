@@ -309,6 +309,7 @@ p{
 
 header, footer, section{
   padding: 88px;
+  width: 100%;
 }
 
 header, footer, #projects{
@@ -493,16 +494,14 @@ nav a:hover, #nav-contact:hover{
   100% {background-color: darkgreen;}
 }
 
-.problem-solving {width: 96%; background-color: #359134;}
-.html {width: 88%; background-color: #4caa04;} 
-.css {width: 72%; background-color: #65aa04;} 
-.js {width: 48%; background-color: #b2ac06;} 
-.php {width: 64%; background-color: #83aa04;} 
-.java {width: 68%; background-color: #80b817;} 
-.cs {width: 90%; background-color: #5aa740;} 
-.py {width: 20%; background-color: #f46536;} 
-.react {width: 15%; background-color: #f44336;} 
-.sql {width: 50%; background-color: #a7aa04;} 
+.problem-solving {width: 95%; background-color: #328b31;}
+.cs {width: 90%; background-color: #339738;}
+.html {width: 88%; background-color: #4ea43d;} 
+.css {width: 80%; background-color: #5bb144;} 
+.js {width: 75%; background-color: #7ab848;} 
+.php {width: 60%; background-color: #8fc54d;} 
+.java {width: 55%; background-color: #aad457;} 
+.sql {width: 50%; background-color: #c1dc55;} 
 .xf {width: 100%; background-color: darkgreen;} 
 
 #skills-tools{
@@ -523,7 +522,7 @@ nav a:hover, #nav-contact:hover{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 88px 0px;
+  gap: 88px;
 }
 
 .project{
@@ -594,6 +593,7 @@ nav a:hover, #nav-contact:hover{
   border: var(--highlight) solid 2px;
   float: left;
   margin-right: 32px;
+  margin-bottom: 64px;
 }
 
 footer{
